@@ -8,7 +8,6 @@ function NewsCarts({ data }) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
     <>
       <div className="newsCart">

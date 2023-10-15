@@ -13,6 +13,13 @@ import product12 from "../images/products/product12.png";
 import product13 from "../images/products/product13.png";
 import newsCart from "../images/newsCart.png";
 import partners1 from "../images/partners/partners1.png";
+import partners2 from "../images/partners/partners2.png";
+import partners3 from "../images/partners/partners3.png";
+import partners4 from "../images/partners/partners4.png";
+import partners5 from "../images/partners/partners5.png";
+import partners6 from "../images/partners/partners6.png";
+import partners7 from "../images/partners/partners7.png";
+import partners8 from "../images/partners/partners8.png";
 export const carouselData = [
   [
     {
@@ -118,6 +125,35 @@ for (let i = 1; i <= 9; i++) {
 export const partners = [
   {
     img: partners1,
+    id: 23,
+  },
+  {
+    img: partners2,
+    id: 24,
+  },
+  {
+    img: partners3,
+    id: 25,
+  },
+  {
+    img: partners4,
+    id: 26,
+  },
+  {
+    img: partners5,
+    id: 27,
+  },
+  {
+    img: partners6,
+    id: 28,
+  },
+  {
+    img: partners7,
+    id: 29,
+  },
+  {
+    img: partners8,
+    id: 30,
   },
 ];
 

@@ -1,0 +1,37 @@
+.partners {
+  background: #fff;
+  padding-bottom: 130px;
+}
+.partners h1 {
+  margin-bottom: 56px;
+}
+.partners .container {
+  max-width: 1360px;
+}
+.partner-items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  row-gap: 29px;
+  column-gap: 38px;
+}
+.partner-items a {
+  width: 269px;
+  height: 130px;
+  border-radius: 30px;
+  border: 1px solid #ececec;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.partner-items a:hover {
+  transform: scale(105%);
+}
+.partners .MuiButtonBase-root {
+  transform: translate(0, -154px);
+}

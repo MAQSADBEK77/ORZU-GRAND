@@ -3,15 +3,16 @@ import TitleComponent from "./TitleComponent";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Tabs, { tabsClasses } from "@mui/material/Tabs";
-import { Link } from "react-router-dom";
-import TitleComponent from "./TitleComponent";
 import "./partners.css";
 function Partners({ data }) {
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  console.log(data);
   return (
     <div className="partners">
       <TitleComponent title="ПАРТНЕРЫ" />
       <div className="container">
-        <TitleComponent title="НОВОСТИ" />
         <Box>
           <Tabs
             onChange={handleChange}
@@ -23,13 +24,24 @@ function Partners({ data }) {
                 "&.Mui-disabled": { opacity: 0.3 },
               },
             }}>
-            {data.map((item) => {
-              return (
-                <Link to="/" key={item.id} className="cart">
-                  <img src={item.img} />
-                </Link>
-              );
-            })}
+            <div className="partner-items">
+              {data.map((item) => {
+                return (
+                  <Link to="/" key={item.id} className="cart">
+                    <img src={item.img} />
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="partner-items">
+              {data.map((item) => {
+                return (
+                  <Link to="/" key={item.id} className="cart">
+                    <img src={item.img} />
+                  </Link>
+                );
+              })}
+            </div>
           </Tabs>
         </Box>
       </div>
