@@ -26,7 +26,7 @@ function NewsCarts({ data }) {
               }}>
               {data.map((item) => {
                 return (
-                  <div key={item.id} className="cart">
+                  <div data-aos="zoom-in" key={item.id} className="cart">
                     <img src={item.img} alt={item.title} />
                     <div className="cart-item">
                       <h4>{item.title}</h4>

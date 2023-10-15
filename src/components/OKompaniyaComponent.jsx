@@ -1,12 +1,6 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import TitleComponent from "./TitleComponent";
 function OKompaniyaComponent() {
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div data-aos="fade-up" className="oKompaniya">
       <TitleComponent title="О КОМПАНИИ" />

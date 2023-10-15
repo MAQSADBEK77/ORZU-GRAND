@@ -3,7 +3,7 @@ import TitleComponent from "../components/TitleComponent";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Aos from "aos";
-import "aos/dist/aos.css";
+
 function ProductsComponent({ title, data }) {
   useEffect(() => {
     Aos.init({ duration: 1000 });
