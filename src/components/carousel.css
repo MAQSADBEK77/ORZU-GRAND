@@ -1,0 +1,83 @@
+.carousel-item {
+  width: 105%;
+  display: inline-flex;
+  justify-content: space-between;
+  white-space: normal;
+  height: 640px;
+}
+.carousel-left {
+  max-width: 680px;
+}
+.carousel-left h1 {
+  color: #0d4c93;
+  margin-top: 40px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  max-width: 541px;
+  letter-spacing: 4.5px;
+  margin-bottom: 31px;
+}
+.carousel-left p {
+  color: #363535;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px; /* 166.667% */
+  margin-bottom: 43px;
+}
+.carousel-left a {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 35px;
+  opacity: 0.9;
+  background: linear-gradient(90deg, #0d4c93 0%, #00c9c9 100%);
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  text-decoration: none;
+}
+.carousel-left a:hover {
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+}
+
+.carousel {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.inner {
+  white-space: nowrap;
+  transition: transform 0.3s;
+}
+.indicators {
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+.indicators button {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: #00c9c9 1px solid;
+}
+.indicators button:hover {
+  transition: all 0.5s;
+  transform: scale(110%);
+}
+.indicator-active {
+  background: #00c9c9 !important;
+}
