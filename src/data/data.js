@@ -12,6 +12,7 @@ import product11 from "../images/products/product11.png";
 import product12 from "../images/products/product12.png";
 import product13 from "../images/products/product13.png";
 import newsCart from "../images/newsCart.png";
+import partners1 from "../images/partners/partners1.png";
 export const carouselData = [
   [
     {
@@ -113,4 +114,11 @@ for (let i = 1; i <= 9; i++) {
     },
   ];
 }
+
+export const partners = [
+  {
+    img: partners1,
+  },
+];
+
 export const homeNewsCarts = homeNewsCartss;
