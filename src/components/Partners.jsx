@@ -4,13 +4,19 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import "./partners.css";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Partners({ data }) {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   console.log(data);
   return (
-    <div className="partners">
+    <div data-aos="flip-down" className="partners">
       <TitleComponent title="ПАРТНЕРЫ" />
       <div className="container">
         <Box>

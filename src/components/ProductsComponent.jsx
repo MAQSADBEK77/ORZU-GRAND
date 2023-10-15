@@ -1,7 +1,13 @@
 import "./productComponent.css";
 import TitleComponent from "../components/TitleComponent";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function ProductsComponent({ title, data }) {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="products">
       <div className="container">
@@ -9,7 +15,7 @@ function ProductsComponent({ title, data }) {
         <div className="carts">
           {data.map((item) => {
             return (
-              <div className="cart" key={item.id}>
+              <div data-aos="flip-up" className="cart" key={item.id}>
                 <div className="imgParent">
                   <img src={item.img} alt={item.title} />
                 </div>
@@ -18,7 +24,7 @@ function ProductsComponent({ title, data }) {
               </div>
             );
           })}
-          <Link className="allProductsLink" to="/products">
+          <Link data-aos="zoom-in" className="allProductsLink" to="/products">
             Перейти в каталог нашей продукции{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"

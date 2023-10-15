@@ -2,9 +2,15 @@ import { Link } from "react-router-dom";
 import "./footer.css";
 import HeaderLocation from "./HeaderLocation";
 import Logo from "./Logo";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Footer() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="footer">
+    <div data-aos="zoom-out-down" className="footer">
       <div className="container">
         <div className="footer-top">
           <div className="footer-left">

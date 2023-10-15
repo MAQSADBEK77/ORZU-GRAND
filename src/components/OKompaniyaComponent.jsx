@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
-import oKompaniyaImg from "../images/oKompaniya.png";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import TitleComponent from "./TitleComponent";
 function OKompaniyaComponent() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="oKompaniya">
+    <div data-aos="fade-up" className="oKompaniya">
       <TitleComponent title="О КОМПАНИИ" />
       <div className="container">
         <div className="oKompaniya-left"></div>

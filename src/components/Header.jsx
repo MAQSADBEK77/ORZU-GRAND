@@ -28,7 +28,7 @@ function Header() {
   }, []);
   return (
     <div
-      data-aos="flip-up"
+    
       className={scrolled ? "header headerFixed" : "header"}>
       <div className="container main">
         <div data-aos="fade-right" className="header-left">
