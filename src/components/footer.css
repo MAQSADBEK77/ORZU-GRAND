@@ -1,0 +1,122 @@
+
+.footer .container {
+  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  padding-bottom: 28px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+.footer-contact {
+  max-width: 497px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 27px;
+}
+.footer-contact-par {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-title {
+  color: #595959;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 107.692% */
+  letter-spacing: 1.04px;
+}
+.footer-contact .location:nth-child(3) .imgParent {
+  width: 50px;
+}
+.footer-contact .location {
+  gap: 11px;
+}
+.toContacts {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  border-radius: 35px;
+  opacity: 0.9;
+  background: linear-gradient(90deg, #0d4c93 0%, #00c9c9 100%);
+  text-decoration: none;
+  padding: 13.5px 30.5px;
+}
+.toContacts:hover {
+  transition: all 0.5s;
+  background: linear-gradient(180deg, #0d4c93 0%, #00c9c9 100%);
+  transform: scale(103%);
+}
+.footer-logo {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+}
+.footer-logo p {
+  color: #585858;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.72px;
+  max-width: 442px;
+}
+.footer-right {
+  display: flex;
+  gap: 20px;
+}
+.footer-menu-child {
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu-child h6 {
+  margin-bottom: 10px;
+  color: #595959;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 107.692% */
+  letter-spacing: 1.04px;
+}
+.footer-menu-child a {
+  color: #595959;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0.64px;
+  text-decoration: none;
+}
+.footer-menu-child a:hover {
+  color: #00c9c9;
+  text-decoration-line: underline;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-bottom p {
+  color: #353535;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.72px;
+}
+.footer-bottom p span {
+  color: #00c9c9;
+}

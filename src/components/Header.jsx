@@ -4,9 +4,13 @@ import "./Header.css";
 import HeaderLocation from "./HeaderLocation";
 import HeaderRight from "./HeaderRight";
 import Logo from "./Logo.jsx";
+import Aos from "aos";
+import "aos/dist/aos.css";
 function Header() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const [scrolled, setScrolled] = useState(false);
-
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     if (scrollPosition > 80) {
@@ -22,17 +26,18 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
   return (
-    <div className={scrolled ? "header headerFixed" : "header"}>
+    <div
+      data-aos="flip-up"
+      className={scrolled ? "header headerFixed" : "header"}>
       <div className="container main">
-        <div className="header-left">
+        <div data-aos="fade-right" className="header-left">
           <HeaderLocation />
         </div>
-        <div className="header-logo">
+        <div data-aos="fade-down" className="header-logo">
           <Logo />
         </div>
-        <div className="header-right">
+        <div data-aos="fade-left" className="header-right">
           <HeaderRight />
         </div>
       </div>

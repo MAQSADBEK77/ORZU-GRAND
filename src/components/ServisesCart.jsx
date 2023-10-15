@@ -7,7 +7,7 @@ function ServisesCart({ data }) {
       <div className="container carts">
         {data.map((item) => {
           return (
-            <div key={item.id} className="cart">
+            <div data-aos="flip-up" key={item.id} className="cart">
               <img src={item.img} alt="" />
               <h3>{item.title}</h3>
               <p>{item.desciption}</p>

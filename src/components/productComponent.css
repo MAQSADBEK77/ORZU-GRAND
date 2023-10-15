@@ -15,6 +15,7 @@
   margin-bottom: 62px;
 }
 .products .cart {
+  transition: all 0.5s;
   border-radius: 35px;
   opacity: 0.9;
   background: linear-gradient(180deg, #f8f8f8 0%, rgba(248, 248, 248, 0) 100%);
@@ -61,7 +62,14 @@
   background-color: rgba(248, 248, 248, 0);
 }
 .products img {
+  transition: all 0.5s;
   background-color: #f8f8f8;
+}
+.cart:hover img {
+  transform: translateY(-5%) scale(105%);
+}
+.cart:hover {
+  transform: scale(103%);
 }
 .allProductsLink {
   color: #0d4c93;

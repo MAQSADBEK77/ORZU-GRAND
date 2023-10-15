@@ -61,6 +61,9 @@
   padding: 13.5px 59px;
   margin-left: 10%;
 }
+.oKompaniya-right a:hover {
+  text-decoration: underline;
+}
 .title:nth-child(2) {
   padding-bottom: 68px;
 }
