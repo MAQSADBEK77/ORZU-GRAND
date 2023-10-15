@@ -26,11 +26,13 @@ function Header() {
     <>
       <div className={scrolled ? "header headerFixed" : "header"}>
         <div className="container main">
-          <div data-aos="fade-right" className="header-left">
-            <HeaderLocation />
-          </div>
-          <div data-aos="fade-down" className="header-logo">
-            <Logo />
+          <div className="main-l">
+            <div data-aos="fade-right" className="header-left">
+              <HeaderLocation />
+            </div>
+            <div data-aos="fade-down" className="header-logo">
+              <Logo />
+            </div>
           </div>
           <div data-aos="fade-left" className="header-right">
             <HeaderRight />

@@ -14,11 +14,16 @@
   padding-right: 15px;
   padding-left: 15px;
 }
+.main-l {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-left {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40.8%;
+  width: 70.8%;
 }
 
 .location,

@@ -112,6 +112,52 @@ img {
     margin-top: -230px;
   }
 }
-@media screen and (max-width:850px) {
-  
+@media screen and (max-width: 850px) {
+  .carts .cart:nth-child(odd) {
+    display: none;
+  }
+  .footer-menu {
+    display: none;
+  }
+  .oKompaniya-right {
+    display: flex;
+    flex-direction: column;
+  }
+  .oKompaniya .title {
+    padding-top: 12px;
+  }
+  .main {
+    gap: 30px;
+  }
+  .header-right {
+    max-width: 130px;
+  }
+  .lealungue {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .indicators {
+    bottom: 30px;
+  }
+  .main-l {
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+  .header-left {
+    gap: 20px;
+  }
+  .news-bottom a {
+    margin: 0 auto;
+  }
+  .news-bottom a:nth-child(2) {
+    display: none;
+  }
+  .footer-bottom p {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .footer-bottom p:nth-child(2) {
+    display: none;
+  }
 }
