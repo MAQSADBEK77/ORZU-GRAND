@@ -135,6 +135,9 @@ img {
   .lealungue {
     display: none;
   }
+  .oKompaniya-right {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .indicators {
@@ -159,5 +162,66 @@ img {
   }
   .footer-bottom p:nth-child(2) {
     display: none;
+  }
+}
+@media screen and (max-width: 620px) {
+  .footer-contact-par {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .footer-contact {
+    flex-direction: column;
+  }
+  .footer-logo {
+    flex-direction: column;
+  }
+  .oKompaniya-right {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .oKompaniya-right p {
+    text-align: center;
+  }
+  .indicators {
+    bottom: 1px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main {
+    gap: 0;
+  }
+  .location,
+  .search,
+  .facebook {
+    display: none;
+  }
+  .newsCart .title {
+    margin-top: 100px;
+  }
+  .carousel-left h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+  .carousel-left p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .carousel-left {
+    max-width: 400px;
+    padding: 0 10px;
+    margin-right: 20px;
+  }
+  .carousel-left h1 {
+    max-width: 90%;
+  }
+  .newsCart .title {
+    margin-top: 200px;
+    margin-bottom: -80px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .newsCart .title {
+    margin-top: 280px;
   }
 }
