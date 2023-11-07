@@ -190,9 +190,9 @@ img {
   .main {
     gap: 0;
   }
-  .location,
-  .search,
-  .facebook {
+  .header .location,
+  .header .search,
+  .header .facebook {
     display: none;
   }
   .newsCart .title {
@@ -219,9 +219,16 @@ img {
     margin-top: 200px;
     margin-bottom: -80px;
   }
+  .allProductsLink {
+    text-align: center;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 380px) {
   .newsCart .title {
     margin-top: 280px;
+  }
+  p {
+    width: 100%;
   }
 }

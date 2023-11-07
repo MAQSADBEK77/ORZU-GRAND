@@ -1,9 +1,18 @@
-import React from 'react'
+import "./oKompaniya.css";
+import TitlePages from "../components/TitlePages";
 
 function OKompaniya() {
   return (
-    <div>OKompaniya</div>
-  )
+    <div className="oKompaniya-page">
+      <TitlePages
+        pagesName="О компании"
+        breadCrumps={[
+          { name: "Главная", to: "/" },
+          { name: "О компании", to: "/info" },
+        ]}
+      />
+    </div>
+  );
 }
 
-export default OKompaniya
+export default OKompaniya;
